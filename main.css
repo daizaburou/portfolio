@@ -8,11 +8,11 @@ padding: 0;
 }
 @font-face {
 	font-family: 'grafitty';
-	src: url(../../ttf/FromStreetArt.ttf);
+	src: url(ttf/FromStreetArt.ttf);
 }
 @font-face {
 	font-family: 'PathwayGothicOne-Regular';
-	src: url(../../ttf/PathwayGothicOne-Regular.ttf);
+	src: url(ttf/PathwayGothicOne-Regular.ttf);
 }
 body{
 background-color: #eee;
@@ -24,7 +24,7 @@ width: 1200px;
 margin: 0 auto;
 }
 .main-vis{
-background: url("../../images/main_bg.png") no-repeat;
+background: url("main_bg.png") no-repeat;
 min-height: 520px;
 position: relative;
 }
@@ -115,7 +115,7 @@ transform: translateX(-50%);
 bottom:-5px;
 }
 .hdg-bg{
-background: url("../../images/hdg_bg.png") no-repeat;
+background: url("images/hdg_bg.png") no-repeat;
 width:312px;
 height:135px;
 }
