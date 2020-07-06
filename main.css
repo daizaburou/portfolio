@@ -115,7 +115,7 @@ transform: translateX(-50%);
 bottom:-5px;
 }
 .hdg-bg{
-background: url("images/hdg_bg.png") no-repeat;
+background: url("hdg_bg.png") no-repeat;
 width:312px;
 height:135px;
 }
