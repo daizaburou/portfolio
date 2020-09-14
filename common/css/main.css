@@ -191,11 +191,11 @@ end:header
 /*----------------------
 main
 ----------------------*/
-main {
+main#top {
   position: relative;
   top: -150px; }
   @media (max-width: 767px) {
-    main {
+    main#top {
       position: inherit; } }
 
 /*--local-nav--*/
@@ -223,7 +223,7 @@ main {
       margin: 5px auto 0;
       transition: 0.2s ease-in-out; }
     #local-nav li a:hover:after {
-      width: 130px; }
+      width: 100px; }
 
 /*--end:local-nav--*/
 /*--table--*/
@@ -364,12 +364,16 @@ end:main
 work
 ----------------------*/
 .work-ground {
-  top: 0; }
+  top: 0;
+  align-items: flex-end;
+  padding-top: 20px; }
   .work-ground img {
     max-width: 300px;
     min-width: 200px; }
   .work-ground div:nth-child(2) {
     max-width: 470px; }
+  .work-ground #local-nav {
+    font-size: 2.3em; }
 
 /*----------------------
 end:work
