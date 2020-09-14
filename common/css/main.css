@@ -60,7 +60,7 @@ img {
 
 /*--end:img--*/
 /*--hdg--*/
-h1 {
+h1#top-top {
   width: 80%;
   position: absolute;
   z-index: 1;
@@ -70,15 +70,15 @@ h1 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
   @media (max-width: 1200px) {
-    h1 {
+    h1#top-top {
       width: auto; } }
   @media (max-width: 767px) {
-    h1 {
+    h1#top-top {
       position: inherit;
       transform: inherit;
       background: url("../images/top_bg.jpg") no-repeat;
       background-size: cover; } }
-  h1 img {
+  h1#top-top img {
     max-width: 100%;
     margin: 0 auto; }
 
@@ -318,7 +318,8 @@ table {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  box-shadow: 0px 0px 12px #aaa; }
+  box-shadow: 0px 0px 12px #aaa;
+  margin: 0 auto; }
   .dog-ear a {
     width: 100%;
     height: 100%;
@@ -358,4 +359,18 @@ table {
 /*--end:work--*/
 /*----------------------
 end:main
+----------------------*/
+/*----------------------
+work
+----------------------*/
+.work-ground {
+  top: 0; }
+  .work-ground img {
+    max-width: 300px;
+    min-width: 200px; }
+  .work-ground div:nth-child(2) {
+    max-width: 470px; }
+
+/*----------------------
+end:work
 ----------------------*/
