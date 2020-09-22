@@ -37,6 +37,9 @@ footer {
 ol, ul {
   list-style: none; }
 
+p {
+  margin-top: 10px; }
+
 /*--slider--*/
 .slider {
   margin-top: 30px; }
@@ -92,7 +95,7 @@ h3 {
   font-size: 1.6em;
   margin-top: 30px;
   position: relative;
-  border-bottom: #eee solid 4px; }
+  border-bottom: #fff solid 4px; }
   h3::after {
     content: "";
     position: absolute;
@@ -129,6 +132,20 @@ h4 {
     transform: rotate(360deg); } }
 
 /*--end:animation--*/
+/*--mark--*/
+span.mark {
+  position: relative; }
+  span.mark:after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    background-color: #008c51;
+    opacity: 0.4;
+    bottom: 3px;
+    left: 0; }
+
+/*--end:mark--*/
 /*----------------------
 end:common
 ----------------------*/
@@ -217,16 +234,16 @@ main#top {
     text-align: center; }
     #local-nav li a {
       color: #000; }
-    #local-nav li a:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 3px;
-      background-color: #008c51;
-      margin: 5px auto 0;
-      transition: 0.2s ease-in-out; }
-    #local-nav li a:hover:after {
-      width: 100px; }
+      #local-nav li a:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #008c51;
+        margin: 5px auto 0;
+        transition: 0.2s ease-in-out; }
+      #local-nav li a:hover:after, #local-nav li a:focus:after {
+        width: 100px; }
 
 /*--end:local-nav--*/
 /*--table--*/
@@ -239,7 +256,6 @@ table {
     text-align: left;
     vertical-align: middle;
     padding: 5px 5px;
-    border: 1px solid #999;
     border-right: 0;
     border-left: 0; }
   table th {
@@ -251,7 +267,6 @@ table {
 /*--to-top--*/
 #to-top {
   mix-blend-mode: multiply;
-  background-color: #008c51;
   padding: 10px;
   width: 80px;
   height: 80px;
@@ -259,15 +274,36 @@ table {
   right: 10%;
   bottom: 10%;
   display: none;
-  opacity: 0.8;
-  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
-  animation: border-animation 6s infinite linear; }
+  opacity: 0.8; }
+  #to-top:hover, #to-top:focus {
+    opacity: 1; }
   #to-top a {
     color: #fff;
     display: block;
     text-align: center;
     padding-top: 16px;
-    padding-bottom: 16px; }
+    padding-bottom: 16px;
+    position: absolute;
+    z-index: 1; }
+  #to-top span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  #to-top .circle_01 {
+    background-color: #008c51;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+    animation: border-animation 6s infinite linear; }
+  #to-top .circle_02 {
+    background-color: #5a9b7f;
+    border-radius: 80% 30% 50% 50%/50%;
+    animation: border-animation 4s infinite linear; }
+  #to-top .circle_03 {
+    background-color: #2fd68d;
+    border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+    animation: border-animation 3s infinite linear; }
 
 /*--end:to-top--*/
 /*--skill--*/
@@ -328,7 +364,8 @@ table {
   .dog-ear a {
     width: 100%;
     height: 100%;
-    display: block; }
+    display: block;
+    position: relative; }
     .dog-ear a:before {
       content: "";
       position: absolute;
@@ -336,13 +373,29 @@ table {
       left: -1px;
       border-width: 0 28px 28px 0;
       border-style: solid;
-      border-color: #ddd #ddd #fff #fff;
+      border-color: #eee #eee #fff #fff;
       box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.2);
       display: block;
       width: 0;
       transform: rotate(270deg);
       transition: 0.4s; }
-  .dog-ear:hover > a:before {
+    .dog-ear a:hover, .dog-ear a:focus {
+      background-color: rgba(0, 0, 0, 0.3); }
+    .dog-ear a:hover span, .dog-ear a:focus span {
+      opacity: 1; }
+    .dog-ear a span {
+      font-size: 38px;
+      opacity: 0;
+      color: #fff;
+      margin: 0 auto;
+      width: 310px;
+      transition: opacity 0.3s;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .dog-ear:hover > a:before, .dog-ear:focus > a:before {
     border-width: 0 50px 50px 0;
     box-shadow: -1px 7px 12px rgba(0, 0, 0, 0.3); }
 
@@ -379,6 +432,10 @@ work
     max-width: 470px; }
   .work-ground #local-nav {
     font-size: 2.3em; }
+
+.work-skill {
+  font-style: italic;
+  font-weight: bold; }
 
 /*----------------------
 end:work
