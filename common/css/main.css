@@ -227,7 +227,6 @@ table {
     width: 20%; }
 
 #to-top {
-  mix-blend-mode: multiply;
   padding: 10px;
   width: 80px;
   height: 80px;
@@ -247,6 +246,7 @@ table {
     position: absolute;
     z-index: 1; }
   #to-top span {
+    mix-blend-mode: multiply;
     display: block;
     position: absolute;
     width: 100%;
