@@ -1,9 +1,3 @@
-/*----------------------
-scss-setting
-----------------------*/
-/*----------------------
-common
-----------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +34,6 @@ ol, ul {
 p {
   margin-top: 10px; }
 
-/*--slider--*/
 .slider {
   margin-top: 30px; }
   .slider div {
@@ -49,8 +42,6 @@ p {
     font-size: 1.3em;
     padding: 0 10px; }
 
-/*--end:slider--*/
-/*--img--*/
 img {
   display: block; }
 
@@ -61,8 +52,6 @@ img {
     margin: 0 auto;
     max-width: 100%; }
 
-/*--end:img--*/
-/*--hdg--*/
 h1#top-top {
   width: 80%;
   position: absolute;
@@ -125,14 +114,10 @@ h4 {
   .hdg-bg .hdg-bg span {
     margin: 30px; }
 
-/*--end:hdg--*/
-/*--animation--*/
 @keyframes border-animation {
   to {
     transform: rotate(360deg); } }
 
-/*--end:animation--*/
-/*--mark--*/
 span.mark {
   position: relative; }
   span.mark:after {
@@ -145,13 +130,6 @@ span.mark {
     bottom: 3px;
     left: 0; }
 
-/*--end:mark--*/
-/*----------------------
-end:common
-----------------------*/
-/*----------------------
-header
-----------------------*/
 header {
   position: relative;
   top: -200px; }
@@ -159,7 +137,6 @@ header {
     header {
       position: inherit; } }
 
-/*--movie--*/
 .video-wrap {
   position: relative; }
   .video-wrap video {
@@ -168,8 +145,6 @@ header {
     .video-wrap {
       display: none; } }
 
-/*--end:movie--*/
-/*--flex--*/
 .flex-sa {
   display: flex;
   justify-content: space-around;
@@ -182,8 +157,6 @@ header {
     .flex-sa {
       display: block; } }
 
-/*--end:flex--*/
-/*--link--*/
 a {
   text-decoration: none; }
 
@@ -204,13 +177,6 @@ a {
   .link:hover, .link:active, .link:focus {
     color: #008c51; }
 
-/*--end:link--*/
-/*----------------------
-end:header
-----------------------*/
-/*----------------------
-main
-----------------------*/
 main#top {
   position: relative;
   top: -150px; }
@@ -218,7 +184,6 @@ main#top {
     main#top {
       position: inherit; } }
 
-/*--local-nav--*/
 #local-nav {
   display: flex;
   font-size: 3.3em;
@@ -245,8 +210,6 @@ main#top {
       #local-nav li a:hover:after, #local-nav li a:focus:after {
         width: 100px; }
 
-/*--end:local-nav--*/
-/*--table--*/
 table {
   width: 100%;
   border-collapse: collapse;
@@ -263,8 +226,6 @@ table {
     line-height: 1.6;
     width: 20%; }
 
-/*--end:table--*/
-/*--to-top--*/
 #to-top {
   mix-blend-mode: multiply;
   padding: 10px;
@@ -305,8 +266,6 @@ table {
     border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
     animation: border-animation 3s infinite linear; }
 
-/*--end:to-top--*/
-/*--skill--*/
 .skill-inner {
   margin-top: 40px; }
   .skill-inner p {
@@ -319,8 +278,6 @@ table {
         margin-left: auto;
         margin-right: auto; } }
 
-/*--end:skill--*/
-/*--about--*/
 .about-inner {
   margin-top: 40px; }
   .about-inner p {
@@ -333,8 +290,6 @@ table {
         margin-left: auto;
         margin-right: auto; } }
 
-/*--end:about--*/
-/*--work--*/
 #work-1 {
   background-image: url("../images/work_01.jpg"); }
 
@@ -414,13 +369,6 @@ table {
         margin-right: auto;
         margin-bottom: 40px; } }
 
-/*--end:work--*/
-/*----------------------
-end:main
-----------------------*/
-/*----------------------
-work
-----------------------*/
 .work-ground {
   top: 0;
   align-items: flex-end;
@@ -436,7 +384,3 @@ work
 .work-skill {
   font-style: italic;
   font-weight: bold; }
-
-/*----------------------
-end:work
-----------------------*/
