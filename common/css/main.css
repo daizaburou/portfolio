@@ -148,9 +148,7 @@ header {
 .flex-sa {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px; }
+  width: 100%; }
   .flex-sa .flex-v-align {
     align-self: center; }
   @media (max-width: 767px) {
@@ -177,12 +175,15 @@ a {
   .link:hover, .link:active, .link:focus {
     color: #008c51; }
 
-main#top {
-  position: relative;
-  top: -150px; }
-  @media (max-width: 767px) {
-    main#top {
-      position: inherit; } }
+main {
+  padding-left: 20px;
+  padding-right: 20px; }
+  main#top {
+    position: relative;
+    top: -150px; }
+    @media (max-width: 767px) {
+      main#top {
+        position: inherit; } }
 
 #local-nav {
   display: flex;
