@@ -2,4 +2,3 @@ common/gulpfile.js
 common/node_modules/
 common/package.json
 common/package-lock.json
-common/css/main.scss
