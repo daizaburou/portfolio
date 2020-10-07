@@ -102,8 +102,6 @@ h1{
       @include sp {
         position:inherit;
         transform:inherit;
-        background: url("../images/top_bg.jpg") no-repeat;
-        background-size:cover;
       }
       img{
         max-width:100%;
@@ -169,7 +167,7 @@ h4{
 //-end:animation-//
 //-marker-//
 span.marker{
-  background: linear-gradient(transparent 50%, $main-color 50%);
+  background: linear-gradient(transparent 50%, #008c5177 50%);
   opacity:0.4;
 }
 //-end:marker-//
