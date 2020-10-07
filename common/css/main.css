@@ -119,8 +119,7 @@ h4 {
   to {
     transform: rotate(360deg); } }
 span.marker {
-  background: linear-gradient(transparent 50%, #008c5177 50%);
-  opacity: 0.4; }
+  background: linear-gradient(transparent 50%, #008c5177 50%); }
 
 header {
   position: relative;
