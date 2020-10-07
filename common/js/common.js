@@ -10,6 +10,7 @@
          return false;
       });
    });
+
    $(document).ready(function() {
       if(mediaSp){
          return false;
