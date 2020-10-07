@@ -6,7 +6,6 @@
 @font-face {
   font-family: 'PathwayGothicOne-Regular';
   src: url(../ttf/PathwayGothicOne-Regular.ttf); }
-
 body {
   background-image: url("../images/wall.jpg");
   color: #333;
@@ -56,7 +55,7 @@ h1#top-top {
   width: 80%;
   position: absolute;
   z-index: 1;
-  top: calc(50% + 100px);
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -73,7 +72,6 @@ h1#top-top {
   h1#top-top img {
     max-width: 100%;
     margin: 0 auto; }
-
 h1#contents-top img {
   max-width: 300px;
   min-width: 200px;
@@ -122,7 +120,6 @@ h4 {
 @keyframes border-animation {
   to {
     transform: rotate(360deg); } }
-
 span.mark {
   position: relative; }
   span.mark:after {
