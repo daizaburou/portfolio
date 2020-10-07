@@ -25,5 +25,11 @@
          }
       });
    });
+   $(function(){
+      $('.btn-hamb').on('click', function() {
+        $(this).toggleClass('active');
+        return false;
+      });
+    });
 }(jQuery));
 

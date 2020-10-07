@@ -6,6 +6,7 @@
 @font-face {
   font-family: 'PathwayGothicOne-Regular';
   src: url(../ttf/PathwayGothicOne-Regular.ttf); }
+
 body {
   background-image: url("../images/wall.jpg");
   color: #333;
@@ -70,6 +71,7 @@ h1#top-top {
   h1#top-top img {
     max-width: 100%;
     margin: 0 auto; }
+
 h1#contents-top img {
   max-width: 300px;
   min-width: 200px;
@@ -118,6 +120,7 @@ h4 {
 @keyframes border-animation {
   to {
     transform: rotate(360deg); } }
+
 span.marker {
   background: linear-gradient(transparent 50%, #008c5177 50%); }
 
@@ -279,6 +282,45 @@ table {
     border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
     animation: border-animation 3s infinite linear; }
 
+.btn-hamb {
+  position: relative;
+  width: 50px;
+  height: 44px;
+  cursor: pointer; }
+
+.btn-hamb span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px; }
+
+.btn-hamb, .btn-hamb span {
+  display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box; }
+
+.btn-hamb span:nth-of-type(1) {
+  top: 0; }
+
+.btn-hamb span:nth-of-type(2) {
+  top: 20px; }
+
+.btn-hamb span:nth-of-type(3) {
+  bottom: 0; }
+
+.btn-hamb.active span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) rotate(-45deg);
+  transform: translateY(20px) rotate(-45deg); }
+
+.btn-hamb.active span:nth-of-type(2) {
+  opacity: 0; }
+
+.btn-hamb.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-20px) rotate(45deg);
+  transform: translateY(-20px) rotate(45deg); }
+
 .skill-inner {
   margin-top: 40px; }
   .skill-inner p {
@@ -323,7 +365,8 @@ table {
 
 .dog-ear {
   height: 420px;
-  width: 340px;
+  max-width: 340px;
+  min-width: 230px;
   background-size: cover;
   position: relative;
   cursor: pointer;
