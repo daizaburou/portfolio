@@ -85,6 +85,7 @@ img{
     }
 }
 //-end:img-//
+
 //-hdg-//
 h1{
   &#top-top{
@@ -452,8 +453,7 @@ table{
 
 .dog-ear{
   height:420px;
-  max-width:340px;
-  min-width:230px;
+  width:340px;
   background-size:cover;
   position:relative;
   cursor:pointer;
@@ -505,8 +505,12 @@ table{
 }
 
 .work-inner{
+  display:flex;
+  flex-wrap:wrap;
   margin-top: 40px;
-    p{
+  margin-left:25px;
+  margin-right:25px;
+  p{
       margin-top: 20px;
       font-size:0.9em;
       text-align:center;

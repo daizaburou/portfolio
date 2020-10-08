@@ -6,7 +6,6 @@
 @font-face {
   font-family: 'PathwayGothicOne-Regular';
   src: url(../ttf/PathwayGothicOne-Regular.ttf); }
-
 body {
   background-image: url("../images/wall.jpg");
   color: #333;
@@ -71,7 +70,6 @@ h1#top-top {
   h1#top-top img {
     max-width: 100%;
     margin: 0 auto; }
-
 h1#contents-top img {
   max-width: 300px;
   min-width: 200px;
@@ -120,7 +118,6 @@ h4 {
 @keyframes border-animation {
   to {
     transform: rotate(360deg); } }
-
 span.marker {
   background: linear-gradient(transparent 50%, #008c5177 50%); }
 
@@ -365,8 +362,7 @@ table {
 
 .dog-ear {
   height: 420px;
-  max-width: 340px;
-  min-width: 230px;
+  width: 340px;
   background-size: cover;
   position: relative;
   cursor: pointer;
@@ -411,7 +407,11 @@ table {
     box-shadow: -1px 7px 12px rgba(0, 0, 0, 0.3); }
 
 .work-inner {
-  margin-top: 40px; }
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-right: 25px; }
   .work-inner p {
     margin-top: 20px;
     font-size: 0.9em;
