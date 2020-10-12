@@ -6,6 +6,7 @@
 @font-face {
   font-family: 'PathwayGothicOne-Regular';
   src: url(../ttf/PathwayGothicOne-Regular.ttf); }
+
 body {
   background-image: url("../images/wall.jpg");
   color: #333;
@@ -70,6 +71,7 @@ h1#top-top {
   h1#top-top img {
     max-width: 100%;
     margin: 0 auto; }
+
 h1#contents-top img {
   max-width: 300px;
   min-width: 200px;
@@ -118,6 +120,7 @@ h4 {
 @keyframes border-animation {
   to {
     transform: rotate(360deg); } }
+
 span.marker {
   background: linear-gradient(transparent 50%, #008c5177 50%); }
 
@@ -141,7 +144,7 @@ header {
   .sub-header div:nth-child(2) {
     max-width: 470px;
     margin-left: 40px; }
-  .sub-header #local-nav {
+  .sub-header .global-nav {
     font-size: 2.3em; }
   @media (max-width: 767px) {
     .sub-header {
@@ -197,22 +200,22 @@ main {
       main#top {
         position: inherit; } }
 
-#local-nav {
+.global-nav {
   display: flex;
   font-size: 3.3em;
   justify-content: center;
   font-family: PathwayGothicOne-Regular; }
   @media (max-width: 767px) {
-    #local-nav {
+    .global-nav {
       font-size: 2.3em; } }
-  #local-nav li {
+  .global-nav li {
     list-style: none;
     width: 200px;
     margin: 10px 20px;
     text-align: center; }
-    #local-nav li a {
+    .global-nav li a {
       color: #000; }
-      #local-nav li a:after {
+      .global-nav li a:after {
         content: "";
         display: block;
         width: 0;
@@ -220,7 +223,7 @@ main {
         background-color: #008c51;
         margin: 5px auto 0;
         transition: 0.2s ease-in-out; }
-      #local-nav li a:hover:after, #local-nav li a:focus:after {
+      .global-nav li a:hover:after, .global-nav li a:focus:after {
         width: 100px; }
 
 table {
