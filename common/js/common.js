@@ -28,7 +28,7 @@
    $(function(){
       $('.btn-hamb').on('click', function() {
         $(this).toggleClass('active');
-        $("nav-wrapper").toggleClass('active');
+        $(".nav-wrapper").toggleClass('active');
         return false;
       });
     });
