@@ -1,4 +1,4 @@
-* {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
@@ -225,6 +225,22 @@ main {
         transition: 0.2s ease-in-out; }
       .global-nav li a:hover:after, .global-nav li a:focus:after {
         width: 100px; }
+
+@media (max-width: 767px) {
+  .nav-wrapper {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transition: all 0.6s;
+    opacity: 0;
+    border-radius: 4px; } }
+
+@media (max-width: 767px) {
+  .nav-wrapper.active {
+    transform: translatex(-100%);
+    opacity: 1; } }
 
 table {
   width: 100%;
