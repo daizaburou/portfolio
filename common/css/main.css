@@ -150,13 +150,17 @@ header {
     @media (max-width: 767px) {
       .sub-header .nav-wrapper {
         background-color: #fff;
+        max-width: 100%;
         width: 100%;
+        height: 200vw;
         position: fixed;
         top: 0;
         left: 100%;
         transition: all 0.6s;
         opacity: 0;
-        border-radius: 4px; } }
+        border-radius: 4px;
+        margin-left: 0;
+        z-index: 10px; } }
     @media (max-width: 767px) {
       .sub-header .nav-wrapper.active {
         transform: translatex(-100%);
@@ -166,6 +170,32 @@ header {
   @media (max-width: 767px) {
     .sub-header {
       display: block; } }
+
+.global-nav {
+  display: flex;
+  font-size: 3.3em;
+  justify-content: center;
+  font-family: PathwayGothicOne-Regular; }
+  @media (max-width: 767px) {
+    .global-nav {
+      font-size: 2.3em; } }
+  .global-nav li {
+    list-style: none;
+    width: 200px;
+    margin: 10px 20px;
+    text-align: center; }
+    .global-nav li a {
+      color: #000; }
+      .global-nav li a:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #008c51;
+        margin: 5px auto 0;
+        transition: 0.2s ease-in-out; }
+      .global-nav li a:hover:after, .global-nav li a:focus:after {
+        width: 100px; }
 
 .video-wrap {
   position: relative; }
@@ -214,32 +244,6 @@ main {
     @media (max-width: 767px) {
       main#top {
         position: inherit; } }
-
-.global-nav {
-  display: flex;
-  font-size: 3.3em;
-  justify-content: center;
-  font-family: PathwayGothicOne-Regular; }
-  @media (max-width: 767px) {
-    .global-nav {
-      font-size: 2.3em; } }
-  .global-nav li {
-    list-style: none;
-    width: 200px;
-    margin: 10px 20px;
-    text-align: center; }
-    .global-nav li a {
-      color: #000; }
-      .global-nav li a:after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 3px;
-        background-color: #008c51;
-        margin: 5px auto 0;
-        transition: 0.2s ease-in-out; }
-      .global-nav li a:hover:after, .global-nav li a:focus:after {
-        width: 100px; }
 
 table {
   width: 100%;
@@ -298,12 +302,15 @@ table {
     animation: border-animation 3s infinite linear; }
 
 .btn-hamb {
-  position: relative;
+  position: fixed;
+  top: 14px;
+  right: 14px;
   width: 50px;
   height: 44px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 20; }
 
-@media (min-width: 768) {
+@media (min-width: 768px) {
   .btn-hamb {
     display: none; } }
 

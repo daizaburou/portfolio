@@ -201,13 +201,17 @@ header{
       margin-left:40px;
       @include sp {
         background-color: #fff;
+        max-width:100%;
         width: 100%;
+        height:200vw;
         position: fixed;
         top: 0;
         left:100%;
         transition: all 0.6s;
         opacity:0;
         border-radius: 4px;
+        margin-left:0;
+        z-index:10px;
       }
       &.active{
         @include sp {
@@ -223,6 +227,38 @@ header{
        display: block;
     }
 }
+//-global-nav-//
+.global-nav{
+  display: flex;
+  font-size: 3.3em;
+  justify-content: center;
+  font-family:PathwayGothicOne-Regular;
+    @include sp {
+      font-size: 2.3em;
+    };
+    li{
+      list-style: none;
+      width: 200px;
+      margin: 10px 20px;
+      text-align: center;
+        a{
+          color:#000;
+        &:after{
+          content: "";
+          display: block;
+          width:0;
+          height: 3px;
+          background-color: $main-color;
+          margin: 5px auto 0;
+          transition: 0.2s ease-in-out;
+        }
+        &:hover:after,&:focus:after{
+          width: 100px;
+        }
+      }
+    }
+}
+//-end:global-nav-//
 //-movie-//
 .video-wrap{
   position: relative;
@@ -285,38 +321,6 @@ main{
       }
   }
 }
-//-global-nav-//
-.global-nav{
-  display: flex;
-  font-size: 3.3em;
-  justify-content: center;
-  font-family:PathwayGothicOne-Regular;
-    @include sp {
-      font-size: 2.3em;
-    };
-    li{
-      list-style: none;
-      width: 200px;
-      margin: 10px 20px;
-      text-align: center;
-        a{
-          color:#000;
-        &:after{
-          content: "";
-          display: block;
-          width:0;
-          height: 3px;
-          background-color: $main-color;
-          margin: 5px auto 0;
-          transition: 0.2s ease-in-out;
-        }
-        &:hover:after,&:focus:after{
-          width: 100px;
-        }
-      }
-    }
-}
-//-end:global-nav-//
 //-table-//
 table{
   width:100%;
@@ -387,15 +391,18 @@ table{
 //-end:to-top-//
 //-btn-hamb-//
 .btn-hamb {
-  position: relative;
+  position: fixed;
+  top: 14px;
+  right: 14px;
   width: 50px;
   height: 44px;
   cursor: pointer;
+  z-index: 20;
 }
-@media (min-width: 768) {
+@media (min-width: 768px) {
   .btn-hamb {
     display:none;
-  }  
+  }
 }
 .btn-hamb span {
   position: absolute;
