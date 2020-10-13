@@ -114,6 +114,9 @@ h1{
       max-width: 300px;
       min-width: 200px;
       margin: 0 auto;
+      @include sp {
+        max-width:100%;
+      }
     }
   }
 }
@@ -388,6 +391,11 @@ table{
   width: 50px;
   height: 44px;
   cursor: pointer;
+}
+@media (min-width: 768) {
+  .btn-hamb {
+    display:none;
+  }  
 }
 .btn-hamb span {
   position: absolute;

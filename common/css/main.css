@@ -76,6 +76,9 @@ h1#contents-top img {
   max-width: 300px;
   min-width: 200px;
   margin: 0 auto; }
+  @media (max-width: 767px) {
+    h1#contents-top img {
+      max-width: 100%; } }
 
 h2 {
   text-align: center;
@@ -299,6 +302,10 @@ table {
   width: 50px;
   height: 44px;
   cursor: pointer; }
+
+@media (min-width: 768) {
+  .btn-hamb {
+    display: none; } }
 
 .btn-hamb span {
   position: absolute;
