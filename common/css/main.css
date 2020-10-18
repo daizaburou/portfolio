@@ -435,6 +435,7 @@ table {
 
 .work-inner {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 40px;
   margin-left: 25px;
