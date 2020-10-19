@@ -397,11 +397,6 @@ table{
   cursor: pointer;
   z-index: 20;
 }
-@media (min-width: 768px) {
-  .btn-hamb {
-    display:none;
-  }
-}
 .btn-hamb span {
   position: absolute;
   left: 0;
@@ -414,6 +409,11 @@ table{
   display: inline-block;
   transition: all .5s;
   box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .btn-hamb, .btn-hamb span  {
+    display:none;
+  }
 }
 .btn-hamb span:nth-of-type(1) {
   top: 0;
