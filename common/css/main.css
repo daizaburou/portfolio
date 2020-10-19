@@ -147,10 +147,10 @@ header {
     margin-left: 40px; }
     @media (max-width: 767px) {
       .sub-header .nav-wrapper {
-        background-color: #fff;
+        background-color: #a7d0a3f7;
         max-width: 100%;
         width: 100%;
-        height: 200vw;
+        height: 300vw;
         position: fixed;
         top: 0;
         left: 100%;
@@ -158,7 +158,7 @@ header {
         opacity: 0;
         border-radius: 4px;
         margin-left: 0;
-        z-index: 10px; } }
+        z-index: 10; } }
     @media (max-width: 767px) {
       .sub-header .nav-wrapper.active {
         transform: translatex(-100%);
@@ -176,12 +176,17 @@ header {
   font-family: PathwayGothicOne-Regular; }
   @media (max-width: 767px) {
     .global-nav {
-      font-size: 2.3em; } }
+      display: block;
+      padding-top: 80px; } }
   .global-nav li {
     list-style: none;
     width: 200px;
     margin: 10px 20px;
     text-align: center; }
+    @media (max-width: 767px) {
+      .global-nav li {
+        margin: 0 auto;
+        padding-bottom: 60px; } }
     .global-nav li a {
       color: #000; }
       .global-nav li a:after {
