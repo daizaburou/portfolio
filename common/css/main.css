@@ -137,7 +137,6 @@ header {
   @media (max-width: 767px) {
     header .nav-wrapper {
       background-color: #a7d0a3f7;
-      max-width: 100%;
       width: 100%;
       height: 300vw;
       position: fixed;
@@ -163,6 +162,10 @@ header {
   .sub-header .nav-wrapper {
     max-width: 470px;
     margin-left: 40px; }
+    @media (max-width: 767px) {
+      .sub-header .nav-wrapper {
+        max-width: 100%;
+        margin-left: 0; } }
   .sub-header .global-nav {
     font-size: 2.3em; }
   @media (max-width: 767px) {
