@@ -186,8 +186,6 @@ header{
       padding-bottom:10px;
     }
   .nav-wrapper{
-    max-width:470px;
-    margin-left:40px;
     @include sp {
       background-color: #a7d0a3f7;
       max-width:100%;
@@ -217,6 +215,10 @@ header{
   align-items:flex-end;
   padding-top:10px;
   padding-bottom:10px;
+    .nav-wrapper{
+      max-width:470px;
+      margin-left:40px;
+    }
     .global-nav{
       font-size:2.3em;
     }
