@@ -224,6 +224,9 @@ header{
     }
     .global-nav{
       font-size:2.3em;
+      @include sp {
+        font-size:3.3em;
+      } 
     }
     @include sp {
        display: block;
