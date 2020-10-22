@@ -69,6 +69,9 @@ h1#top-top {
   h1#top-top img {
     max-width: 100%;
     margin: 0 auto; }
+    @media (max-width: 767px) {
+      h1#top-top img {
+        max-width: 80%; } }
 
 h1#contents-top img {
   max-width: 300px;
